@@ -30,4 +30,9 @@ print(calc_sum(step=1, begin=3, end=7))
 # 무조건 위치 인수가 앞으로 와야 합니다.
 print(calc_sum(3, step=1, end=7))
 # print(calc_sum(3, 1, end=7)) (x) end 값 중복
-print(calc_sum(end=7, 3, 1))
+# print(calc_sum(end=7, 3, 1)) (x) 구문에러. 위치 인수가 키워드 인수보다 앞에 와야 함
+# print(calc_sum(3, end=7, 1)) (X) 구문에러
+
+print(3, 6, 9, sep='->', end='!')
+# print(sep='->', end='!', 3, 6, 9) (x) 구문에러
+

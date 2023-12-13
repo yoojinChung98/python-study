@@ -32,5 +32,6 @@ def calc_points(*points, name):
         total += p
     return total / len(points)
 
+# 가변인수와 일반 인수를 동시에 사용할 때는 일반 인수를 반드시 키워드 인수 방식으로 전달하셔야 합니다.
 result = calc_points(97, 100, 80, 100, 55, 60, name='김철수')
 print(f'평균: {result}점')
