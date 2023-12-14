@@ -1,0 +1,1 @@
+print(first_song.select_one('div.t_center > span.rank'))
